@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5e9;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    font-weight: bold;
+    color: #d9534f;
+    /* Red color for emphasis */
+}
+
+#tipsList {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#tipsList li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #4CAF50;
+    /* Green border for tips */
+}
+
+/* Styles for the More Features tab */
+#moreFeatures {
+    background: #f0f8ff;
+    /* Light blue background */
+    border: 2px solid #4CAF50;
+    /* Green border */
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.more-tab {
+    background-color: #007bff;
+    /* Blue background for More button */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.more-tab:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+/* Back button styling */
+#backBtn {
+    background-color: #dc3545;
+    /* Red background for Back button */
+    margin-top: 10px;
+}
+
+#backBtn:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#totalFootprint, #completedChallenges, #loggedActivities {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50; /* Green color for emphasis */
+}
+
+#challengeStatus {
+    font-size: 1.2em;
+    color: #4CAF50; /* Green for challenge status */
+}
+
+#activityCount {
+    font-size: 1.2em;
+    color: #4CAF50; /* Green for activity count */
+}

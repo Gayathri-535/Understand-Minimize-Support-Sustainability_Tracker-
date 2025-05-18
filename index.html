@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sustainability Tracker</h1>
+        <p>Understand your impact, minimize waste, and support each other!</p>
+    </header>
+    <main>
+        <!-- More Tab Button -->
+        <button id="moreTabBtn" class="more-tab">More</button>
+
+        <!-- More Features Tab -->
+        <div id="moreFeatures" style="display:none;">
+            <section id="dashboard">
+                <h2>Your Dashboard</h2>
+                <p>Total Carbon Footprint: <span id="totalFootprint">0</span> kg</p>
+                <p>Challenges Completed: <span id="completedChallenges">0</span></p>
+                <p>Activities Logged: <span id="loggedActivities">0</span></p>
+                <button id="viewDetailsBtn">View Detailed Stats</button>
+                <div id="detailedStats" style="display:none;">
+                    <p>Details on your sustainability progress...</p>
+                </div>
+            </section>
+
+            <section id="customChallenges">
+                <h2>Create Your Own Challenges</h2>
+                <input type="text" id="customChallengeInput" placeholder="Enter a new challenge">
+                <button id="addChallengeBtn">Add Challenge</button>
+                <ul id="userChallengesList"></ul>
+            </section>
+
+            <section id="eventCalendar">
+                <h2>Local Sustainability Events</h2>
+                <p>Find events to participate in:</p>
+                <ul id="eventsList">
+                    <li>Community Clean-Up - Date: Nov 15, 2024</li>
+                    <li>Tree Planting Day - Date: Nov 20, 2024</li>
+                </ul>
+            </section>
+
+            <section id="feedbackLoop">
+                <h2>User Feedback and Suggestions</h2>
+                <textarea id="feedbackSuggestions" placeholder="What features would you like to see?"></textarea>
+                <button id="submitSuggestionsBtn">Submit Suggestions</button>
+                <p id="suggestionsStatus"></p>
+            </section>
+
+            <button id="backBtn">Back</button>
+        </div>
+
+        <section id="education">
+            <h2>Understand Your Impact</h2>
+            <button id="learnMoreBtn">Learn More</button>
+            <div id="educationContent" style="display:none;">
+                <p>Your carbon footprint is the total amount of greenhouse gases you produce. Here are some resources...
+                </p>
+            </div>
+        </section>
+
+        <section id="inputs">
+            <h2>Calculate Your Carbon Footprint</h2>
+            <label for="transportation">Daily Transportation (e.g., car, bus, bike):</label>
+            <input type="text" id="transportation" placeholder="Enter transportation mode">
+
+            <label for="meals">Meals Per Day:</label>
+            <input type="number" id="meals" placeholder="Number of meals" min="1">
+
+            <label for="waste">Daily Waste (kg):</label>
+            <input type="number" id="waste" placeholder="Waste in kg" min="0">
+
+            <button id="calculateBtn">Calculate Carbon Footprint</button>
+            <button id="resetBtn">Reset</button>
+            <p id="result"></p>
+            <div id="footprintBar" style="width: 100%; background: #ddd;">
+                <div id="footprintFill" style="height: 20px; background: #4CAF50;"></div>
+            </div>
+            <ul id="tipsList"></ul>
+        </section>
+
+        <section id="challenges">
+            <h2>Daily Challenges</h2>
+            <p>Complete the following challenges to reduce your carbon footprint!</p>
+            <ul id="challengeList">
+                <li><input type="checkbox"> Go meatless for a day</li>
+                <li><input type="checkbox"> Walk or bike instead of driving</li>
+                <li><input type="checkbox"> Reduce plastic use</li>
+                <li><input type="checkbox"> Use reusable bags</li>
+                <li><input type="checkbox"> Plant a tree</li>
+            </ul>
+            <button id="resetChallengesBtn">Reset Challenges</button>
+            <p id="challengeStatus"></p>
+        </section>
+
+
+        <section id="history">
+            <h2>Footprint History</h2>
+            <button id="resetHistoryBtn">Reset History</button>
+            <ul id="historyList"></ul>
+        </section>
+
+        <section id="resources">
+            <h2>Sustainability Resources</h2>
+            <ul>
+                <li><a href="https://www.epa.gov/ghgemissions" target="_blank">EPA: Greenhouse Gas Emissions</a></li>
+                <li><a href="https://www.worldwildlife.org/pages/sustainable-living" target="_blank">WWF: Sustainable
+                        Living</a></li>
+                <li><a href="https://www.nrdc.org/stories/how-you-can-stop-global-warming" target="_blank">NRDC: Stop
+                        Global Warming</a></li>
+            </ul>
+        </section>
+
+        <section id="community">
+            <h2>Support Each Other</h2>
+            <input type="text" id="userInput" placeholder="Share your progress...">
+            <button id="shareBtn">Share</button>
+            <button id="resetCommunityBtn">Reset Community Input</button>
+            <ul id="communityList"></ul>
+        </section>
+
+        <section id="progressTracking">
+            <h2>Daily Activity Log</h2>
+            <select id="activityCategory">
+                <option value="Transportation">Transportation</option>
+                <option value="Waste Reduction">Waste Reduction</option>
+                <option value="Energy Conservation">Energy Conservation</option>
+                <option value="Community Engagement">Community Engagement</option>
+            </select>
+            <input type="text" id="activityInput" placeholder="What did you do today?">
+            <button id="logActivityBtn">Log Activity</button>
+            <button id="resetActivityBtn">Reset Activity Log</button>
+            <ul id="activityList"></ul>
+            <p id="activityCount">Total Activities Logged: 0</p>
+
+        </section>
+        <section id="quiz">
+            <h2>Sustainability Quiz</h2>
+            <p>What is the main greenhouse gas responsible for climate change?</p>
+            <input type="radio" name="quiz" value="CO2"> Carbon Dioxide<br>
+            <input type="radio" name="quiz" value="O2"> Oxygen<br>
+            <input type="radio" name="quiz" value="N2"> Nitrogen<br>
+            <button id="submitQuizBtn">Submit Answer</button>
+            <button id="resetQuizBtn">Reset Quiz</button>
+            <p id="quizResult"></p>
+        </section>
+        <section id="feedback">
+            <h2>User Feedback</h2>
+            <textarea id="feedbackInput" placeholder="Share your thoughts..."></textarea>
+            <button id="submitFeedbackBtn">Submit Feedback</button>
+            <p id="feedbackStatus"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
