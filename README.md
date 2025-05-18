@@ -1,6 +1,8 @@
 # Understand • Support • Minimize – Sustainability Tracker 🌱
 
 ![Screenshot of Sustainability Tracker](Page.png)
+![Screenshot of Sustainability Tracker](Page2.png)
+
 
 A web-based sustainability tracker that empowers individuals and communities to:
 
@@ -8,11 +10,17 @@ A web-based sustainability tracker that empowers individuals and communities to:
 - **Support** sustainable habits by suggesting eco-friendly actions  
 - **Minimize** carbon footprint with personalized recommendations
 
+
 ## 🌍 Features
 - Daily habit tracking (waste, water, energy)
 - Eco-friendly tips and challenges
 - Progress visualization 
 - Responsive and user-friendly design
+  
+![Screenshot of Sustainability Tracker](Page3.png)
+![Screenshot of Sustainability Tracker](Page4.png)
+
+
 
 ## 💻 Tech Stack
 - HTML, CSS, JavaScript
