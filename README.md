@@ -1,5 +1,7 @@
 # Understand • Support • Minimize – Sustainability Tracker 🌱
 
+![Screenshot of Sustainability Tracker](Page.png)
+
 A web-based sustainability tracker that empowers individuals and communities to:
 
 - **Understand** their environmental impact through data tracking and analytics  
